@@ -42,10 +42,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}>
           <h1 className="text-5xl md:text-7xl font-light text-white mb-8 leading-tight drop-shadow-2xl">
-            Estonia’s position in
+            United Arab Emirates’s position in
             <br />
             <span className="font-bold text-sky-900 drop-shadow-2xl">
-              Northern Europe
+             Asia
             </span>
             <br />
             allows us to support international trade
@@ -61,7 +61,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl text-white/90 mb-12 max-w-5xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            From here we connect European suppliers with clients across Asia and
+            From here we connect suppliers with clients across Asia and
             beyond.
           </motion.p>
 
