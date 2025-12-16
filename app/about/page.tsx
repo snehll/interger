@@ -26,9 +26,9 @@ export default function AboutPage() {
             About Us
           </h1>
           <p className="text-xl md:text-2xl text-white/95 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            Based in Estonia, our company combines digital expertise with
+            Based in United Arab Emirate, our company combines digital expertise with
             industrial trade experience. We help businesses source and deliver
-            equipment across Europe and Asia, providing reliable,
+            equipment across Asia and Europe, providing reliable,
             well-documented, and transparent trade operations. With a focus on
             compliance and efficiency, we make cross-border transactions simple
             and secure.
