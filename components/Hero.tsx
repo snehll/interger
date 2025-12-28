@@ -45,7 +45,7 @@ export default function Hero() {
             United Arab Emirates’s position in
             <br />
             <span className="font-bold text-sky-900 drop-shadow-2xl">
-             Asia
+          the middle east
             </span>
             <br />
             allows us to support international trade
@@ -61,7 +61,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl text-white/90 mb-12 max-w-5xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            From here we connect suppliers with clients across Asia and
+            From here we connect suppliers with clients across the middle east and
             beyond.
           </motion.p>
 
