@@ -30,7 +30,7 @@ export default function ContactPage() {
               <h2 className="text-4xl font-bold text-sky-700 mb-8">
                 Get in Touch
               </h2>
-              <ContactForm />
+              <ContactForm companyName="interger"/>
             </div>
             <div className="space-y-8">
               <div>
