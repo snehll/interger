@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
             Arab Emirates, having its registered office in Ras Al Khaimah Free
             Zone (“Integer WW”, “we,” “our,” or “us”), collects, uses, stores,
             and protects your personal information when you visit our website{" "}
-            <strong>[WEBSITE NAME]</strong> (“Website”).
+            <strong>https://integer.ae</strong> (“Website”).
           </p>
           <p>
             By using our Website and submitting your personal information
@@ -148,7 +148,7 @@ export default function PrivacyPolicy() {
             <br />
             Email: mail@integer.ae
             <br />
-            Website: [WEBSITE NAME]
+            Website: https://integer.ae
           </p>
         </div>
       </div>
