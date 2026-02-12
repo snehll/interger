@@ -10,15 +10,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "INTEGER | Estonia Industrial Trade",
+    default: "INTEGER | UAE Industrial Trade",
     template: "%s | INTEGER",
   },
   description:
-    "Estonia’s digital gateway for industrial trade — fast, transparent, and technologically precise.",
+    "UAE’s digital gateway for industrial trade — fast, transparent, and technologically precise.",
   openGraph: {
     title: "INTEGER WW FZ-LLC",
     description:
-      "Estonia’s position in Northern Europe allows us to support international trade with speed and technological precision.",
+      "UAE’s position in Northern Europe allows us to support international trade with speed and technological precision.",
     url: "https://integer.ae",
     siteName: "INTEGER",
     images: ["/og-integer.jpg"],
