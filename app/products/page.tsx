@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import AnimatedSection from "@/components/AnimatedSection";
 import { categories } from "@/constant";
+import Image from "next/image";
 
 export const metadata = { title: "Products & Spare Parts" };
 
@@ -25,31 +25,44 @@ export default function ProductsPage() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {categories.map((cat, i) => (
-              <AnimatedSection key={i}>
-                <div className="group relative overflow-hidden rounded-3xl h-96 cursor-pointer shadow-xl">
-                  {cat.img ? (
-                    <img
-                      src={cat.img}
-                      alt={cat.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                  ) : (
-                    <div className="h-full bg-linear-to-br from-sky-700 via-sky-600 to-blue-700" />
-                  )}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-10 text-white z-10">
-                    <h3 className="text-4xl font-bold mb-3 drop-shadow-2xl">
-                      {cat.title}
-                    </h3>
-                    <p className="text-xl opacity-95 drop-shadow-lg">
-                      {cat.brands}
-                    </p>
+            {categories.map((cat, i) => {
+              const isLocal = cat.img?.startsWith("/");
+              return (
+                <AnimatedSection key={i}>
+                  <div className="group relative overflow-hidden rounded-3xl h-96 cursor-pointer shadow-xl">
+                    {cat.img ? (
+                      isLocal ? (
+                        <Image
+                          src={cat.img}
+                          alt={cat.title}
+                          fill
+                          className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                      ) : (
+                        /* eslint-disable-next-line @next/next/no-img-element */
+                        <img
+                          src={cat.img}
+                          alt={cat.title}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                      )
+                    ) : (
+                      <div className="h-full bg-linear-to-br from-sky-700 via-sky-600 to-blue-700" />
+                    )}
+                    <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-0 left-0 right-0 p-10 text-white z-10">
+                      <h3 className="text-4xl font-bold mb-3 drop-shadow-2xl">
+                        {cat.title}
+                      </h3>
+                      <p className="text-xl opacity-95 drop-shadow-lg">
+                        {cat.brands}
+                      </p>
+                    </div>
+                    <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 -rotate-45 translate-x-96 group-hover:translate-x-0" />
                   </div>
-                  <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 -rotate-45 translate-x-96 group-hover:translate-x-0" />
-                </div>
-              </AnimatedSection>
-            ))}
+                </AnimatedSection>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -63,6 +63,13 @@ export default function Footer() {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/terms-of-use"
+                  className="text-slate-700 hover:text-sky-600">
+                  Terms of Use
+                </Link>
+              </li>
             </ul>
           </div>
 
